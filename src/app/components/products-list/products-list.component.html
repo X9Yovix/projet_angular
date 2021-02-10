@@ -1,0 +1,129 @@
+<!-- <p>products-list works!</p> -->
+<!-- <table class="table">
+    <thead class="thead-dark">
+        <th></th>
+        <th>id</th>
+        <th>name</th>
+        <th>unt price</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let tempproduit of products">
+            <td class="align-center"><img src="{{tempproduit.imgUrl}}"></td>
+            <td class="align-center">{{tempproduit.id_Prod}}</td>
+            <td class="align-center">{{tempproduit.name_p}}</td>
+            <td class="align-center">{{tempproduit.unt_price}}</td>
+        </tr>
+    </tbody>
+</table> -->
+<!-- <p *ngFor="let tempproduit of products">{{tempproduit.id_Prod}}</p>
+<div *ngFor="let tempproduit of products">
+    
+    <img src="{{tempproduit.imgUrl}}">
+    <div>
+        {{tempproduit.id_Prod}}
+    </div>
+    <div>
+        {{tempproduit.sku}}
+    </div>
+    <div>
+        {{tempproduit.name_p}}
+    </div>
+    <div>
+        {{tempproduit.desc_p}}
+    </div>
+    <div>
+        {{tempproduit.unt_price}}
+    </div>
+    <div>
+        {{tempproduit.imgUrl}}
+    </div>
+    <div>
+        {{tempproduit.active_p}}
+    </div>
+    <div>
+        {{tempproduit.untInStock}}
+    </div>
+    <div>
+        {{tempproduit.date_crea}}
+    </div>
+    <div>
+        {{tempproduit.date_update}}
+    </div>
+</div>  -->
+<div class="container">
+  <div class="row">
+
+    <div *ngFor="let tempproduit of products">
+      <div class="col-6">
+        <img src="{{tempproduit.imgUrl}}">
+        <div>
+          {{tempproduit.id_Prod}}
+        </div>
+        <div>
+          {{tempproduit.sku}}
+        </div>
+        <div>
+          {{tempproduit.name_p}}
+        </div>
+        <div>
+          {{tempproduit.desc_p}}
+        </div>
+        <div>
+          {{tempproduit.unt_price}}
+        </div>
+        <div>
+          {{tempproduit.active_p}}
+        </div>
+        <div>
+          {{tempproduit.untInStock}}
+        </div>
+        <div>
+          {{tempproduit.date_crea}}
+        </div>
+        <div>
+          {{tempproduit.date_update}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- <div *ngFor="let tempproduit of products">
+    
+    <img src="{{tempproduit.imgUrl}}">
+    <div>
+        {{tempproduit.id_Prod}}
+    </div>
+    <div>
+        {{tempproduit.sku}}
+    </div>
+    <div>
+        {{tempproduit.name_p}}
+    </div>
+    <div>
+        {{tempproduit.desc_p}}
+    </div>
+    <div>
+        {{tempproduit.unt_price}}
+    </div>
+    <div>
+        {{tempproduit.imgUrl}}
+    </div>
+    <div>
+        {{tempproduit.active_p}}
+    </div>
+    <div>
+        {{tempproduit.untInStock}}
+    </div>
+    <div>
+        {{tempproduit.date_crea}}
+    </div>
+    <div>
+        {{tempproduit.date_update}}
+    </div>
+</div>
+ -->

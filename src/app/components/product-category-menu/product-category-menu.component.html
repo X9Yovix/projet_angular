@@ -1,0 +1,29 @@
+<!-- <div class="menu-sidebar-content js-scrollbar1">
+  <nav class="navbar-sidebar">
+    <ul class="list-unstyled navbar-list">
+      <li>
+        <a routerLink="/category/1" routerLinkActive="active_link">Books</a>
+      </li>
+      <li>
+        <a routerLink="/category/2" routerLinkActive="active_link">Coffee Mugs</a>
+      </li>
+      <li>
+        <a routerLink="/category/3" routerLinkActive="active_link">Mouse Pads</a>
+      </li>
+      <li>
+        <a routerLink="/category/4" routerLinkActive="active_link">Luggage Tags</a>
+      </li>
+    </ul>
+  </nav>
+</div> -->
+
+<div class="menu-sidebar-content js-scrollbar1">
+  <nav class="navbar-sidebar">
+    <ul class="list-unstyled navbar-list">
+      <li *ngFor="let temcat of productCategories">
+        <a routerLink="/product_Categories/{{ temcat.id }}" routerLinkActive="active_link">{{temcat.cat_name}}</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
